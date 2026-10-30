@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayNear | Student Accommodation Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Website Header -->
+<header class="site-header">
+    <div class="logo">
+        <span class="house-icon">⌂</span>
+        <span>StayNear</span>
+    </div>
+
+    <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="housing.html">Find Housing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="housing.html" class="get-started">Get Started</a>
+</header>
+ <!-- Main Home Page Content -->
+ <main>
+
+    <section class="hero">
+        <h1>Find Your Perfect Student Accommodation</h1>
+        <p>Discover affordable rooms and accommodation
+            near your school in Freetown.</p>
+            <img src="images/lumley-room.jpg"
+                 alt="Student bedroom with a bed and study desk"
+                 class="hero-image">    
+    </section>
+
+    <!-- Accommodation Search -->
+    <section class="search-section">
+        <h2>Search for Accommodation</h2>
+
+        <form class="search-form" id="housing-search">
+
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter area or school">    
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price Range</label>
+                <select id="price" name="price">
+                    <option value="">Select price range</option>
+                    <option>Budget friendly</option>
+                    <option>Mid-range</option>
+                    <option>Higher budget</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="room-type">Room Type</label>
+                <select id="room-type" name="room-type">
+                    <option value="">Select room type</option>
+                    <option>Single Room</option>
+                    <option>Shared Room</option>
+                    <option>Apartment</option>
+                </select>
+            </div>
+
+            <button type="submit" class="search-button">
+                Search
+            </button>
+
+
+        </form>
+    
+       
+    </section>
+
+    <!-- Popular Areas -->
+    <section class="popular-areas">
+        <h2>Popular Areas</h2>
+
+        <div class="area-grid">
+            <a href="housing.html?location=Wilberforce" class="area-card">Wilberforce</a>
+            <a href="housing.html?location=Congo%20Cross" class="area-card">Congo Cross</a>
+            <a href="housing.html?location=Lumley" class="area-card">Lumley</a>
+            <a href="housing.html?location=Freetown%20Central" class="area-card">Freetown Central</a>
+            <a href="housing.html?location=Hill%20Station" class="area-card">Hill Station</a>
+        </div>
+    </section>
+
+</main>
+
+    <!-- Website Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-brand">
+            <h2>StayNear</h2>
+            <p>Student Accommodation Finder — Freetown</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="housing.html">Find Housing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 StayNear. All rights reserved.</p>
+
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

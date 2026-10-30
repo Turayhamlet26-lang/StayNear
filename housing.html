@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Housing | StayNear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+        <div class="logo">
+            <span class="house-icon">⌂</span>
+            <span>StayNear</span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="housing.html" class="active">Find Housing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="housing.html" class="get-started">Get Started</a>
+    </header>
+
+    <!-- Main Find Housing Content -->
+    <main>
+        
+<section class="housing-intro">
+    <p class="housing-eyebrow">YOUR NEXT HOME STARTS HERE</p>
+    <h1>Find Your Student Accommodation</h1>
+    <p>
+        Explore rooms and apartments in Freetown and find
+        a place that suits your needs and budget.
+    </p>
+</section>
+    
+        <section class="housing-listings">
+            <h2>Available Accommodation</h2>
+         
+<!-- Accommodation Search -->
+
+<form action="housing.html" method="GET" class="housing-search housing-filters">
+    <div class="search-field">
+        <label for="location">Location</label>
+        <select id="location" name="location">
+            <option value="">All locations</option>
+            <option value="Lumley">Lumley</option>
+            <option value="Congo Cross">Congo Cross</option>
+            <option value="Wilberforce">Wilberforce</option>
+        </select>
+    </div>
+
+    <div class="search-field">
+        <label for="price">Budget</label>
+        <select id="price" name="price">
+            <option value="">All budgets</option>
+            <option value="Budget friendly">Budget friendly</option>
+            <option value="Mid-range">Mid-range</option>
+            <option value="Higher budget">Higher budget</option>
+        </select>
+    </div>
+
+    <div class="search-field">
+        <label for="roomType">Room type</label>
+        <select id="roomType" name="roomType">
+            <option value="">All room types</option>
+            <option value="Single Room">Single Room</option>
+            <option value="Shared Room">Shared Room</option>
+            <option value="Apartment">Apartment</option>
+        </select>
+    </div>
+
+    <button type="submit" class="details-button">Search</button>
+</form>
+   
+    
+            
+<div class="housing-grid">
+
+    <!-- Accommodation 1 -->
+    <article class="housing-card" data-location="Lumley" data-price="Budget friendly" data-room-type="Single Room">
+        <img src="images/lumley-room.jpg" 
+             alt="Student bedroom in Lumley with a study desk">
+
+        <div class="housing-card-content">
+            <h3>Comfortable Student Room</h3>
+            <p class="housing-location">Lumley, Freetown</p>
+            <p>A simple room with space to study and rest.</p>
+            <p class="housing-price">Price: Contact provider</p>
+            <a href="details.html?location=Lumley">View Details</a>
+        </div>
+    </article>
+
+    <!-- Accommodation 2 -->
+    <article class="housing-card" data-location="Congo Cross" data-price="Mid-range" data-room-type="Shared Room">
+        <img src="images/congo-room.jpg"
+             alt="Shared student bedroom in Congo Cross">
+
+        <div class="housing-card-content">
+            <h3>Student Study Room</h3>
+            <p class="housing-location">Congo Cross, Freetown</p>
+            <p>A room suitable for a student's daily needs.</p>
+            <p class="housing-price">Price: Contact provider</p>
+            <a href="details.html?location=Congo%20Cross">View Details</a>
+        </div>
+    </article>
+
+    <!-- Accommodation 3 -->
+    <article class="housing-card" data-location="Wilberforce" data-price="Higher budget" data-room-type="Apartment">
+        <img src="images/wilberforce-room.jpg" 
+             alt="Modern student apartment in Wilberforce">
+
+        <div class="housing-card-content">
+            <h3>Affordable Student Housing</h3>
+            <p class="housing-location">Wilberforce, Freetown</p>
+            <p>Explore a housing option for your studies.</p>
+            <p class="housing-price">Price: Contact provider</p>
+            <a href="details.html?location=Wilberforce">View Details</a>
+        </div>
+    </article>
+
+</div>
+
+    
+        </section>
+    </main>
+
+    <!-- Website Footer -->
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <h2>StayNear</h2>
+            <p>Student Accommodation Finder — Freetown</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="housing.html">Find Housing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 StayNear. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
